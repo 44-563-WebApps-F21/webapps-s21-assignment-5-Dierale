@@ -16,6 +16,9 @@
     crossorigin="anonymous"></script>
 
   <style>
+    body {
+      padding: 10px;
+    }
     div.container img {
       max-width: 500px;
       max-height: 500px;
@@ -113,87 +116,116 @@
   </div>
 
   <br>
-  <table class="table table-dark table-striped table-hover caption-top">
-    <caption>Animals and More</caption>
-    <thead>
-      <tr>
-        <th scope="col">Letter</th>
-        <th scope="col">Animal</th>
-        <th scope="col">City</th>
-        <th scope="col">Car</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">D</th>
-        <td>Duck</td>
-        <td>Denver</td>
-        <td>DeLorean</td>
-      </tr>
-      <tr>
-        <th scope="row">I</th>
-        <td>Iguana</td>
-        <td>Indianapolis</td>
-        <td>Impala</td>
-      </tr>
-      <tr>
-        <th scope="row">E</th>
-        <td>Eagle</td>
-        <td>El Paso</td>
-        <td>Elantra</td>
-      </tr>
-      <tr>
-        <th scope="row">R</th>
-        <td>Red Panda</td>
-        <td>Reno</td>
-        <td>Range Rover</td>
-      </tr>
-      <tr>
-        <th scope="row">I</th>
-        <td>Ibis</td>
-        <td>Irvine</td>
-        <td>Interceptor</td>
-      </tr>
-      <tr>
-        <th scope="row">N</th>
-        <td>Nightingale</td>
-        <td>New York City</td>
-        <td>Nitro</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="container">
+    <table class="table table-dark table-striped table-hover caption-top">
+      <caption>Animals and More</caption>
+      <thead>
+        <tr>
+          <th scope="col">Letter</th>
+          <th scope="col">Animal</th>
+          <th scope="col">City</th>
+          <th scope="col">Car</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">D</th>
+          <td>Duck</td>
+          <td>Denver</td>
+          <td>DeLorean</td>
+        </tr>
+        <tr>
+          <th scope="row">I</th>
+          <td>Iguana</td>
+          <td>Indianapolis</td>
+          <td>Impala</td>
+        </tr>
+        <tr>
+          <th scope="row">E</th>
+          <td>Eagle</td>
+          <td>El Paso</td>
+          <td>Elantra</td>
+        </tr>
+        <tr>
+          <th scope="row">R</th>
+          <td>Red Panda</td>
+          <td>Reno</td>
+          <td>Range Rover</td>
+        </tr>
+        <tr>
+          <th scope="row">I</th>
+          <td>Ibis</td>
+          <td>Irvine</td>
+          <td>Interceptor</td>
+        </tr>
+        <tr>
+          <th scope="row">N</th>
+          <td>Nightingale</td>
+          <td>New York City</td>
+          <td>Nitro</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <br>
-  <div class="button-toolbar" aria-label="Letter Reference Buttons">
-    <div class="btn-group" aria-label="Successful Image Buttons">
-      <button type="button" class="btn btn-success">E</button>
-      <button type="button" class="btn btn-success">R</button>
-      <button type="button" class="btn btn-success">I</button>
-    </div>
-    <div class="btn-group" aria-label="Warning Buttons">
-      <button type="button" class="btn btn-warning">N</button>
-      <button type="button" class="btn btn-warning">D</button>
-    </div>
-    <div class="btn-group" aria-label="Danger Buttons">
-      <button type="button" class="btn btn-danger">I</button>
+  <div class="container">
+    <div class="button-toolbar" aria-label="Letter Reference Buttons">
+      <div class="btn-group" aria-label="Successful Image Buttons">
+        <button type="button" class="btn btn-success">E</button>
+        <button type="button" class="btn btn-success">R</button>
+        <button type="button" class="btn btn-success">I</button>
+      </div>
+      <div class="btn-group" aria-label="Warning Buttons">
+        <button type="button" class="btn btn-warning">N</button>
+        <button type="button" class="btn btn-warning">D</button>
+      </div>
+      <div class="btn-group" aria-label="Danger Buttons">
+        <button type="button" class="btn btn-danger">I</button>
+      </div>
     </div>
   </div>
   <br>
 
-  <h3>Visit some places!</h3>
-  <div class="btn-group dropdown" role="group">
-    <button id="btnGroup1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="btnGroup1">
-      <li><a class="dropdown-item" href="plane.html">Planes</a></li>
-      <li><a class="dropdown-item" href="train.html">Trains</a></li>
-    </ul>
+  <div class="container">
+    <h3>Visit some places!</h3>
+    <div class="btn-group dropdown" role="group">
+      <button id="btnGroup1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="btnGroup1">
+        <li><a class="dropdown-item" href="plane.html">Planes</a></li>
+        <li><a class="dropdown-item" href="train.html">Trains</a></li>
+      </ul>
+    </div>
   </div>
 
   <!-- Give our dropdown some space at the bottom of the page-->
   <br><br><br>
   <br><br><br>
-  <br><br><br>
+
+  <div class="container">
+    <form>
+      <div class="form-group mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">
+          <small>We'll never share your email with anyone else.</small>
+        </div>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="formInputAnimal" class="form-label">Animal</label>
+        <input type="text" class="form-control" placeholder="Enter your animal">
+      </div>
+
+      <div class="form-check mb-3">
+        <label for="formCheckbox" class="form-check-label">Sign up for newsletter?</label>
+        <input type="checkbox" class="form-check-input">
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 
 </html>
